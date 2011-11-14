@@ -1,0 +1,182 @@
+           /*
+==========================================================================
+ Project: Designer - Styling
+ Author: Matt Grantham - @MattGrantham
+==========================================================================
+*/
+/* line 10, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+body.sc-theme,
+body.sc-theme > .sc-pane.sc-main.workspace {
+  overflow: hidden;
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/main-bg.png?1308248038");
+}
+
+/* line 15, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/main-bg.png?1308248038");
+}
+
+/* line 22, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .design {
+  background: #fff;
+  border: 1px solid #1c1c1c;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+}
+
+/* line 30, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .rotated-page {
+  transform: rotate(0.8deg);
+  -moz-transform: rotate(0.8deg);
+  -webkit-transform: rotate(0.8deg);
+  border: 1px solid #111;
+  background: #ccc;
+}
+
+/* line 41, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock,
+.workspace .dock .sc-collection-view {
+  border: none !important;
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/dock-bg.png?1308248038") repeat-x;
+}
+
+/* line 48, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-view .sc-collection-item {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/dock-item-bg.png?1308248038") repeat-x;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  text-align: center;
+}
+
+/* line 54, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-view .sc-collection-item .sc-outline {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/dock-item-divider.png?1308248038") no-repeat right;
+}
+
+/* line 58, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.sc-theme.focus .workspace .sc-collection-view.focus .sc-collection-item.sel,
+.workspace .dock .sc-collection-view .sc-collection-item.sel {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/dock-item-sel-bg.png?1308248038") repeat-x;
+  color: #aebf85;
+}
+
+/* line 62, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-view .sc-collection-item.sel .sc-outline {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/dock-item-sel-divider.png?1308248038") no-repeat right;
+}
+
+/* line 66, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-list-item-view.has-icon label {
+  left: 4px;
+  right: 4px;
+  bottom: 6px;
+  height: 18px;
+  margin-top: 10px;
+}
+
+/* line 73, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-item .icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+  margin-top: 0;
+  left: 50%;
+  margin-left: -16px;
+}
+
+/* line 83, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-item .icon.pane {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/pane.png?1308248038") no-repeat;
+}
+
+/* line 86, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-item .icon.controller {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/controller.png?1308248038") no-repeat;
+}
+
+/* line 89, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-item .icon.view {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/view.png?1308248038") no-repeat;
+}
+
+/* line 92, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/css/designer_css.scss */
+.workspace .dock .sc-collection-item .icon.page {
+  background: url("/static/sproutcore/experimental/designer/en/current/source/images/page.png?1308248038") no-repeat;
+}
+
+/* line 6, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/high_light_css.scss */
+.sc-view.high-light .cover {
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  position: absolute;
+}
+
+/* line 2, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles {
+  border: 1px rgba(185, 192, 255, 0.5) dashed;
+  overflow: visible;
+}
+
+/* line 7, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle {
+  background-color: #ffdfb2;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px;
+  opacity: 0.9;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+/* line 24, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.top {
+  margin-top: 0;
+  top: -4px;
+  cursor: row-resize;
+}
+
+/* line 30, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.bottom {
+  margin-top: 0;
+  top: auto;
+  bottom: -4px;
+  cursor: row-resize;
+}
+
+/* line 37, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.left {
+  margin-left: 0;
+  left: -4px;
+  cursor: col-resize;
+}
+
+/* line 43, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.right {
+  margin-left: 0;
+  left: auto;
+  right: -4px;
+  cursor: col-resize;
+}
+
+/* line 51, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.top.left,
+.sc-view.handles .handle.bottom.right {
+  cursor: default;
+}
+
+/* line 56, tmp/chance/Users/akollegger/Developer/sandbox/SproutCore/todos/tmp/debug/staging/static/sproutcore/experimental/designer/en/current/selection_handles_css.scss */
+.sc-view.handles .handle.top.right,
+.sc-view.handles .handle.bottom.left {
+  cursor: default;
+}
+

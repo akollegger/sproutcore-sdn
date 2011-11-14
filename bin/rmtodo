@@ -1,0 +1,17 @@
+#!/bin/sh
+
+NEO_HOST=${NEO_HOST:="localhost:8080"}
+NEO_BASE=${NEO_BASE:="/neo4j-todo/"}
+NEO_URL="http://${NEO_HOST}${NEO_BASE}"
+
+
+if [ "$1" == "" ]; then
+  echo "Usage: rmtodo <todo-id>"
+  exit 1
+fi
+
+REST_ENDPOINT="${NEO_URL}todos/$1"
+CURL_OPTS="-X DELETE --verbose --fail -H Accept:application/json -H Content-Type:application/json"
+
+curl ${CURL_OPTS} ${REST_ENDPOINT} 
+

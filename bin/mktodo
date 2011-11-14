@@ -1,0 +1,18 @@
+#!/bin/sh
+
+NEO_HOST=${NEO_HOST:="localhost:8080"}
+NEO_BASE=${NEO_BASE:="/neo4j-todo/"}
+NEO_URL="http://${NEO_HOST}${NEO_BASE}"
+
+REST_ENDPOINT="${NEO_URL}todos"
+CURL_OPTS="--verbose --fail -H Accept:application/json -H Content-Type:application/json"
+
+if [ "$1" == "" ]; then
+  echo "Usage: mktodo <todo-text>"
+  exit 1
+fi
+
+TODO=$1
+
+curl -d "{ \"title\" :\"${TODO}\"}" ${CURL_OPTS} ${REST_ENDPOINT} 
+

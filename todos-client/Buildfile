@@ -1,0 +1,9 @@
+# ==========================================================================
+# Project:   Todos
+# Copyright: @2011 Neo Technology, Inc.
+# ==========================================================================
+
+# Add initial buildfile information here
+config :all, :required => ["sproutcore/core_foundation", "sproutcore/datastore", "sproutcore/ajax"], :theme => "sproutcore/empty_theme"
+
+proxy '/api', :to => 'localhost:8080', :url => '/neo4j-todo'
